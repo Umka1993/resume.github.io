@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,300&family=Pacifico&family=Rajdhani:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@1,300&family=Pacifico&family=Rajdhani:wght@400;500&display=swap");
 *, *:before, *:after {
@@ -657,5 +658,416 @@ input, button, select {
     padding: 20px;
   }
   /**/
+}
+
+.working {
+  padding: 10px;
+  background-color: #72768c;
+}
+
+.working__title {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;
+  color: #d4d5f1;
+  font-family: 'Pangolin', cursive;
+}
+
+.slider-2 {
+  visibility: hidden;
+  position: relative;
+  margin: 25px 0;
+  text-align: center;
+}
+
+.slider-2 .slick-initialized {
+  visibility: visible;
+}
+
+.portfolio-demo .slider {
+  visibility: visible;
+}
+
+/* Лента слайдов*/
+.slick-track {
+  min-width: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* Ограничивающая оболочка*/
+.slick-list {
+  overflow: hidden;
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 5px;
+}
+
+.review-slider .slick-list {
+  max-width: 1130px;
+}
+
+/* Слайд*/
+.slick-slide {
+  text-align: center;
+  height: auto;
+  outline: 0;
+}
+
+.review-slider .slick-slide {
+  padding: 10px 20px 0;
+}
+
+.review-slider .slick-slide:hover {
+  text-decoration: none;
+}
+
+.review-slider .slick-slide span {
+  display: block;
+  overflow: hidden;
+  outline: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.13), 0 0 0 rgba(0, 0, 0, 0.02);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.13), 0 0 0 rgba(0, 0, 0, 0.02);
+  margin-bottom: 15px;
+}
+
+.slick-slide span img {
+  width: 100%;
+}
+
+.clients-slider .slick-slide img {
+  max-width: 100%;
+}
+
+/* Стрелка*/
+.slick-arrow {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.clients-info .slick-arrow {
+  top: 0;
+}
+
+.team .slick-arrow {
+  top: 15%;
+}
+
+.slick-arrow {
+  display: none;
+}
+
+.slick-arrow:before {
+  font-size: 36px;
+  color: #424242;
+}
+
+.slick-arrow.slick-prev {
+  left: 0;
+}
+
+.slick-arrow.slick-next {
+  right: 0;
+}
+
+.slick-arrow.slick-prev, .slick-arrow.slick-next {
+  width: 50px;
+  height: 90px;
+  border-radius: 0 45px 45px 0;
+  background: #e7ecf2;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.13), 0 0 0 rgba(0, 0, 0, 0.02);
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.13), 0 0 0 rgba(0, 0, 0, 0.02);
+  position: absolute;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  font-size: 0;
+  border: none;
+  padding: 0;
+}
+
+.slick-arrow.slick-disabled:before {
+  opacity: 0.5;
+}
+
+.slick-arrow.slick-prev:before {
+  margin-right: 10px;
+  content: "<";
+}
+
+.slick-arrow.slick-next {
+  border-radius: 45px 0 0 45px;
+}
+
+.slick-arrow.slick-next:before {
+  content: ">";
+  margin-left: 10px;
+}
+
+.slick-arrow.slick-prev:hover, .slick-arrow.slick-next:hover {
+  width: 90px;
+  color: #4990e2;
+  background: #e7ecf2;
+}
+
+.slick-arrow.slick-prev:hover:before {
+  margin-right: -30px;
+  color: #4990e2;
+}
+
+.slick-arrow.slick-next:hover:before {
+  margin-left: -30px;
+  color: #4990e2;
+}
+
+.slick-arrow.slick-disabled:hover:before {
+  color: #424242;
+}
+
+.slick-arrow.slick-prev:hover:before, .slick-arrow.slick-next:hover:before {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.slideblk {
+  position: relative;
+  margin-right: 28px;
+  margin-left: 7px;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.14);
+  width: 362px;
+  height: 232px;
+  text-decoration: none;
+  padding-left: 5px;
+  border-radius: 5%;
+}
+
+.slideblk h2 {
+  color: #d4d5f1;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  font-family: 'Pangolin', cursive;
+}
+
+.slideblk:nth-child(1) {
+  background: url(../img/turRem.jpg) 80% top/cover no-repeat;
+}
+
+.slideblk:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.5);
+  border-radius: 5%;
+}
+
+.slideblk:nth-child(2) {
+  background: url(../img/asb.png) 80% top/cover no-repeat;
+}
+
+.slideblk:nth-child(3) {
+  background: url(../img/comments.png) 80% top/contain no-repeat;
+}
+
+.slideblk:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.5);
+  border-radius: 5%;
+}
+
+.slideblk:nth-child(4) {
+  background: url(../img/eror404.png) top/contain no-repeat;
+}
+
+.slideblk:nth-child(4)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.5);
+  border-radius: 5%;
+}
+
+.slideblk:nth-child(5) {
+  background: url(../img/PRTU.png) center/contain no-repeat;
+}
+
+.slideblk:nth-child(5)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.5);
+  border-radius: 5%;
+}
+
+.slideblk:nth-child(6) {
+  background: url(../img/PRTU.png) center/contain no-repeat;
+}
+
+.slideblk:nth-child(6)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.5);
+  border-radius: 5%;
+}
+
+.slideblk:nth-child(7) {
+  background: url(../img/PRTU.png) center/contain no-repeat;
+}
+
+.slideblk:nth-child(7)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.5);
+  border-radius: 5%;
+}
+
+.slideblk__title {
+  bottom: 5px;
+  position: absolute;
+  font-family: 'Pangolin' sans-serif;
+  letter-spacing: 0.02em;
+  color: #333333;
+  text-align: left;
+  font-size: 12px;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 45px;
+}
+
+.slideblk__subtitle {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #777777;
+  text-align-last: left;
+  -webkit-margin-before: 0;
+  margin-block-start: 0;
+  -webkit-margin-after: 0;
+  margin-block-end: 0;
+}
+
+.slideblk__time {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #ea6c46;
+  margin-top: 64px;
+  text-align: left;
+}
+
+.slick-dots {
+  margin-top: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  outline: none;
+}
+
+.slick-dots > .slick-active {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.slick-dots > .slick-active::after {
+  content: "";
+  position: absolute;
+  background-color: #948ee4;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.slick-dots li > .slick-active {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.slick-dots button {
+  font-size: 0;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border: 1.0px solid #948ee4;
+  border-radius: 50%;
+  outline: none;
+}
+
+/* Стили для адаптивности*/
+/* ноутбук или небольшой монитор*/
+/* большой планшет или нетбук*/
+/* планшет*/
+/* мобильный телефон*/
+@media (max-width: 767px) {
+  .abc {
+    background: black;
+  }
+}
+
+@media (max-width: 576px) {
+  .slick-track {
+    display: block;
+  }
+  .slideblk {
+    margin-bottom: 25px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

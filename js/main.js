@@ -17,13 +17,24 @@ span.onclick = function () {
 
 window.onclick = function (event) {
    if (event.target == modal) {
-       modal.style.display = "none";
+      modal.style.display = "none";
    }
 }
 
 footerBtn.onclick = function () {
    modal.style.display = "block";
 }
+
+// Скрипт slick (слайдер)
+$(".slider-block").slick({
+   dots: true,
+   autoplay: false,
+   infinite: false,
+   arrows: true,
+   slidesToShow: 1,
+   slidesToScroll: 1,
+
+});
 
 // sent.onclick = function () {
 //    modal_content.style.display = "none";
