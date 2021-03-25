@@ -8,7 +8,7 @@ $(".slider-block").slick({
 	slidesToScroll : 3,
 	responsive: [
     {
-      breakpoint: 576,
+      breakpoint: 767,
       settings: {
         slidesToShow: 3,
         vertical: true,

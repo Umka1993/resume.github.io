@@ -844,7 +844,15 @@ input, button, select {
   height: 232px;
   text-decoration: none;
   padding-left: 5px;
+  display: inline-block;
   border-radius: 5%;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.slideblk a {
+  width: 100%;
+  height: 100%;
 }
 
 .slideblk h2 {
@@ -857,7 +865,7 @@ input, button, select {
 }
 
 .slideblk:nth-child(1) {
-  background: url(../img/turRem.jpg) 80% top/cover no-repeat;
+  background: url(../img/turRem.jpg) center 100%/cover no-repeat;
 }
 
 .slideblk:nth-child(1)::before {
@@ -867,7 +875,7 @@ input, button, select {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(19, 19, 19, 0.5);
+  background-color: rgba(19, 19, 19, 0.4);
   border-radius: 5%;
 }
 
@@ -876,7 +884,7 @@ input, button, select {
 }
 
 .slideblk:nth-child(3) {
-  background: url(../img/comments.png) 80% top/contain no-repeat;
+  background: url(../img/comments.png) right top/50% auto no-repeat;
 }
 
 .slideblk:nth-child(3)::before {
@@ -886,7 +894,7 @@ input, button, select {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(19, 19, 19, 0.5);
+  background-color: rgba(19, 19, 19, 0.2);
   border-radius: 5%;
 }
 
@@ -901,12 +909,12 @@ input, button, select {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(19, 19, 19, 0.5);
+  background-color: rgba(19, 19, 19, 0.2);
   border-radius: 5%;
 }
 
 .slideblk:nth-child(5) {
-  background: url(../img/PRTU.png) center/contain no-repeat;
+  background: url(../img/PRTU.png) center/50% auto no-repeat;
 }
 
 .slideblk:nth-child(5)::before {
@@ -916,12 +924,12 @@ input, button, select {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(19, 19, 19, 0.5);
+  background-color: rgba(19, 19, 19, 0.2);
   border-radius: 5%;
 }
 
 .slideblk:nth-child(6) {
-  background: url(../img/PRTU.png) center/contain no-repeat;
+  background: url(../img/PRTU.png) center/50% auto no-repeat;
 }
 
 .slideblk:nth-child(6)::before {
@@ -931,12 +939,12 @@ input, button, select {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(19, 19, 19, 0.5);
+  background-color: rgba(19, 19, 19, 0.2);
   border-radius: 5%;
 }
 
 .slideblk:nth-child(7) {
-  background: url(../img/PRTU.png) center/contain no-repeat;
+  background: url(../img/PRTU.png) center/50% auto no-repeat;
 }
 
 .slideblk:nth-child(7)::before {
@@ -946,8 +954,45 @@ input, button, select {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(19, 19, 19, 0.5);
+  background-color: rgba(19, 19, 19, 0.2);
   border-radius: 5%;
+}
+
+.slideblk:nth-child(8) {
+  background: url(../img/voteSoikino.png) top/contain no-repeat;
+}
+
+.slideblk:nth-child(8)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.2);
+  border-radius: 5%;
+}
+
+.slideblk:nth-child(9) {
+  background: url(../img/voteSoikino.png) top/contain no-repeat;
+}
+
+.slideblk:nth-child(9)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.2);
+  border-radius: 5%;
+}
+
+.slideblk:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slideblk__title {
@@ -1017,7 +1062,7 @@ input, button, select {
 .slick-dots > .slick-active::after {
   content: "";
   position: absolute;
-  background-color: #948ee4;
+  background-color: #72768c;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -1060,14 +1105,24 @@ input, button, select {
   .abc {
     background: black;
   }
+  .slick-track {
+    display: block;
+  }
+  .slideblk {
+    margin-bottom: 25px;
+  }
 }
 
 @media (max-width: 576px) {
   .slick-track {
     display: block;
   }
+  .slick-list {
+    padding: 0;
+  }
   .slideblk {
     margin-bottom: 25px;
+    width: 440px;
   }
 }
 /*# sourceMappingURL=style.css.map */
