@@ -15,5 +15,16 @@ $(".slider-block").slick({
         verticalSwiping: true,
         slidesToScroll: 3
       }
-    }]
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2,
+        vertical: true,
+        verticalSwiping: true,
+        slidesToScroll: 2
+      }
+    }
+  ]
+    
 });
