@@ -25,7 +25,8 @@ $(".slider-block").slick({
         slidesToScroll: 2,
         dots: true,
         swipe: false,
-        tochMove: false
+        draggable:false
+        
 
 
       }
