@@ -688,6 +688,10 @@ input, button, select {
   font-size: 30px;
   color: #d4d5f1;
   font-family: 'Pangolin', cursive;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
 }
 
 .slider-2 {
@@ -1076,6 +1080,9 @@ input, button, select {
     margin-right: 7px;
     margin-left: 7px;
     margin-bottom: 27px;
+  }
+  .slick-dots {
+    margin-top: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */
