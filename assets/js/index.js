@@ -22,7 +22,14 @@ $(".slider-block").slick({
         slidesToShow: 2,
         vertical: true,
         verticalSwiping: true,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        dots: true,
+        // swipe: false
+        touchMove: false,
+        touchTrashold: 10
+        
+
+
       }
     }
   ]
