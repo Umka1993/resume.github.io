@@ -24,11 +24,7 @@ $(".slider-block").slick({
         verticalSwiping: true,
         slidesToScroll: 2,
         dots: true,
-        // swipe: false
-        touchMove: false,
-        touchTrashold: 10
-        
-
+        swipe: false
 
       }
     }
